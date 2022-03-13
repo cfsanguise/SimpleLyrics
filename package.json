@@ -1,0 +1,19 @@
+{
+  "name": "simplelyrics",
+  "version": "1.0.0",
+  "description": "Resource for finding lyrics without difficulties",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "cfsanguise",
+  "license": "ISC",
+  "dependencies": {
+    "client-oauth2": "^4.3.3",
+    "express": "^4.17.3",
+    "node-html-parser": "^5.2.0",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "simple-oauth2": "^4.3.0"
+  }
+}

@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Comfortaa', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 100%;
+    padding: 20px;
+    background-color: #4361EE;
+    color: #fff;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: aqua;
+}
