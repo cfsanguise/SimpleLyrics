@@ -9,7 +9,7 @@ const html = path.join(public, '/index.html')
 const pageDoesntExist = path.join(public, './404.html')
 
 const server = express()
-const port = proccess.env.PORT || 3000
+const port = process.env.PORT || 3000
 
 server.use(express.static(public))
 
