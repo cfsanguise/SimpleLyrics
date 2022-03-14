@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const findLyrics = async (query, songid) => {
         container.innerHTML = ``
         loading(container)
-        fetch(`http://localhost:3000/lyrics?path=${query}&id=${songid}`, {method: 'GET'})
+        fetch(`/lyrics?path=${query}&id=${songid}`, {method: 'GET'})
         .then(res => {
             if (res.ok) {
                 return res.json()
@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const search = async query => {
         loading(searchResults)
-        const s = fetch(`http://localhost:3000/search?q=${query}`, {method: 'GET'}).then(res => {
+        const s = fetch(`/search?q=${query}`, {method: 'GET'}).then(res => {
         if (res.ok) {
             return res.json()
         } else {

@@ -9,6 +9,7 @@ const html = path.join(public, '/index.html')
 const pageDoesntExist = path.join(public, './404.html')
 
 const server = express()
+const port = proccess.env.PORT || 3000
 
 server.use(express.static(public))
 
@@ -39,7 +40,7 @@ server.use((req, res, next) => {
     res.status(404).sendFile(pageDoesntExist)
 })
 
-server.listen(3000, () => console.log('ur dam server is runnin'))
+server.listen(port, () => console.log('Server is running'))
 
 
 
