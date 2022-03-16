@@ -36,13 +36,19 @@ iframe {
     aspect-ratio: 16/9;
 }
 
+main {
+    position: relative;
+}
+
 .error {
     color: var(--accent);
     font-size: 1em;
-    display: block;
-    text-align: center;
     margin-top: 20px;
     grid-column: 1/minmax(2, unset);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 .loading {
@@ -184,6 +190,7 @@ input:focus {
     margin: 0 auto;
     margin-top: 20px;
     grid-auto-rows: minmax(min-content, max-content);
+    position: relative;
 }
 
 

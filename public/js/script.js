@@ -273,7 +273,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const search = query => {
         clearSearch()
         startRotateAnimation()
-        fetch(`http://localhost:3000/search?q=${query}`, {method: 'GET'}).then(res => {
+        fetch(`/search?q=${query}`, {method: 'GET'}).then(res => {
         if (res.ok) {
             return res.json()
         } else {
