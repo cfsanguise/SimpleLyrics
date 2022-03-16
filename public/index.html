@@ -5,46 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SympleLyrics - find your words</title>
-    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Styles and font -->
+
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
-    <link rel="mask-icon" href="./img/favcons/safari-pinned-tab.svg" color="#5bbad5">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- SEO -->
+
+    <meta name="description" content="SimpleLyrics is a website build on genius api that helps you to find lyrics for song">
+    <meta name="robots" content="index">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
 </head>
 <body>
-    <header class="header">
-        <div class="padding header__container">
-            <div class="header__left header__flex">
-                <img class="logo" src="./img/logo.png" alt="logo">
-                <span>- find your words</span>
-            </div>
-            <form formaction="https://jsonplaceholder.typicode.com/todos/1" class="header__form" method="get">
-                <input data-notclose="true" class="header__search" type="text" placeholder="Search for your lyrics here">
-                <input data-notclose="true" class="header__search search-modal" type="text" placeholder="Search for your lyrics here">
-                <button data-notclose="true" class="header__submit">
-                    Search
-                </button>
-                <div class="header__results">
-                </div>
-            </form>
-            <button data-notclose="true" class="header__searchbtn" type="text">
-                <img src="./img/search.png" alt="search icon">
+    <header class="header container">
+        <img src="/img/logo.png" alt="SimpleLyrics logo" class="logo">
+        <form id="search-form" name="search">
+            <input placeholder="Type the name of the song or it’s author" type="search" name="search" class="search">
+            <button type="submit" class="search__button hexagon">
+                <img src="/img/search.svg" alt="Search icon">
             </button>
-        </div>
+        </form>
     </header>
-    <main class="content">
-       <p class="hello">
-           Hello! You can search for any song lyrics on this website. 
-           It's based on genius api, so you can get the best quality lyrics.
-           You will also recieve album name, author, and musical video.
-       </p>
-    </main> 
-
-    <script src="./js/script.js"></script>
+    <div class="results container">
+    </div>
+    <main class="content container">
+    </main>
+    <footer class="footer container">
+        <a href="https://github.com/cfsanguise/SimpleLyrics" class="hexagon">
+            <img src="./img/github.svg" alt="Github">
+        </a>
+        <p class="footer__madeon">
+            Website is made on <a href="https://docs.genius.com">Genius.api</a>
+        </p>
+        <span class="copyright">
+            © Copyright SimpleLyrics 2022
+        </span>
+    </footer>
+    <div class="modal"></div>
+    <script src="/js/script.js"></script>
 </body>
 </html>
